@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Web Challenge</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header>
+        <nav>
+            <div class="logo" id="logo">
+                <img src="images/logo.svg" alt="" class="img-logo" id="img-logo">
+            </div>
+            
+                <ul class="menu-list nav-active" >
+                    <li><a href="#services" >Services</a></li>
+                    <li><a href="#about" >About</a></li>
+                    <li><a href="#contact" >Contact</a></li>
+                </ul>
+            
+            <div class="hamburger toggle">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <section class="intro" id="intro">
+            <div class="box-intro" id="box-intro">
+                <div class="box-info" id="about">
+                    <h1>We are <strong>KAYNE</strong></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eius quis iste earum, eveniet quia! Hic itaque dolorum voluptate voluptatibus exercitationem a praesentium consequatur quia distinctio harum. Magni, itaque cumque.</p> 
+                    <div class="box-button">
+                        <button class="click-button">Click Here </button>
+                    </div>
+                </div>
+                <img src="images/1.jpg" alt="our-house" class="our-house">
+            </div>
+        </section>
+        <section class="case_studies">
+            <h1>Case Studies</h1>
+            <div class="box-cases">
+                <div class="case-study one" onmouseenter="hacerClick()">
+                    <div class="text-case" >
+                        <div class="text-info">
+                            <h3>Coffee</h3>
+                            <p>Branding - UX/UI</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="case-study two" onmouseenter="hacerClickdos()">
+                    <div class="text-case text-dos">
+                        <div class="text-info">
+                            <h3>hello word pale blue</h3>
+                                <p>Web Design- UX/UI </p>
+                            </div>
+                    </div>
+                </div>
+                <div class="case-study three" onmouseenter="hacerClickthree()">
+                    <div class="text-case text-tres">
+                        <div class="text-info">
+                            <h3>Honest</h3>
+                                <p>Branding - UX/UI- Web Design</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="case-study four" onmouseenter="hacerClickfour()">
+                    <div class="text-case text-four" >
+                        <div class="text-info">
+                            <h3>The Atelier</h3>
+                                <p>Branding - UX/UI</p>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="services" id="services">
+           
+                <div class="services-intro">
+                    <div class="service-img-box">
+                      <!-- aca va imagen del servicio--> 
+                   
+                    </div>
+                    <div class="about-us">
+                        <h1>Our Services</h1>
+                        <div class="about-us-info">
+                            <p class="textOne">Our technology team at KAYNE has the technical expertise and experience to meet any
+                                technological need. Starting with human-centered design our architects develop software
+                                that has the polished and snappy feel of the very best consumer apps. We take pride in
+                                delivering innovative solutions on time and on budget through rapid prototyping and an
+                                agile development methodology.</p>
+                            <div class="line"></div>
+                            <p class="testimony">“Thank-you from all of us at ArchitectsInc. for getting our Site up and running so quickly!
+                                It looks amazing and functions exactly how we envisioned. As designers, we appreciate all
+                                your extra effort in accommodating the little detailsthat make the site a breeze to use,
+                                beautiful to look at and a product that will add value for our clients for years to come.” <br>
+                                <strong>Daniel, Architect</strong></p>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="services-detail">
+                    <div class="box-radius box-info-serv">
+                        <h6>Web & Front-end Applications</h6>
+                        <div class="info webapps-service" onclick="serviceFunction()" >
+                             <div class="service-info">
+                                    <p class="text-info-serv">We build responsive web applications to solve your most complex business problems. Our
+                                        team works with all the new and modern frameworks, ensuring seamless experiences
+                                        across every device as well as a flawless integration with back-end data sources.</p>
+                                    <div class="list-service-box">
+                                            <ul class="list-services">
+                                                <li><i class="fab fa-react"></i>  React</li>
+                                                <li><i class="fab fa-angular"></i>  Angular</li>
+                                                <li><i class="fab fa-vuejs"></i> Vue</li>
+                                            </ul>
+                                    </div>
+                             </div>                      
+                        </div>
+                    
+                    </div>
+                    <div class="apis box-info-serv box-radius">
+                            <h6>APIs & System Integrations</h6>
+                            <div class="info apis-info">
+                                    <div class="service-info apis-serv">
+                                        <p class="text-info-serv">Our team leverages best-in-class tools to ensure security, performance and functionality.
+                                                We collaborate rigorously with our clients to document business requirements, design
+                                                integration architectures and connect all relevant systems.</p>
+                                    </div>
+                                    <div class="list-block-box">
+                                        <ul class="list-services">
+                                            <li><i class="fas fa-bullseye"></i>  Golang</li>
+                                            <li><i class="fab fa-node"></i> Node.js</li>
+                                            <li><i class="fas fa-code"></i>Swagger</li>
+                                        </ul>
+                                    </div>
+                            </div>
+                    </div>  
+                    <div class="cloud-inf box-info-serv box-radius">
+                        <h6>Cloud Infrastructure</h6>
+                        <div class="info cloud-info">
+                                <div class="service-info apis-serv">
+                                    <p class="text-info-serv cloud">Our cloud architects skillfully design, implement and deploy scalable environments to
+                                            support the most demanding solutions and applications. We work with the best major
+                                            cloud infrastructure partners, with an ability to deploy across all key global geographies
+                                            and security requirements.</p>
+                                </div>
+                                 <ul class="list-services cloud-list-box">
+                                    <li class="cloud-list"><i class="fab fa-google"></i> Google Cloud</li>
+                                 </ul>    
+                                 <ul class="list-services cloud-list-box">
+                                      <li class="cloud-list"><i class="fab fa-aws"></i> AWS</li>
+                                      <li class="cloud-list"><i class="fas fa-dharmachakra"></i>Kubernetes</li>
+                                       <li class="cloud-list"><i class="fas fa-grip-horizontal"></i>  Terraform</li>
+                                 </ul>       
+                        </div>
+                    </div>  
+                    <div class="data box-info-serv box-radius">
+                        <h6 >Databases</h6>
+                        <div class="info data-info">
+                                <div class="service-info">
+                                    <p class="text-info-serv">We at Kayne have great experience implementing solutions that leverage both legacy and modern databases, while maintaining the highest and best security standards. Our
+                                            expertise has been leveraged to address the most difficult challenges in highly regulated
+                                            industries.</p>
+                                </div>
+                                <ul class="list-services">
+                                    <li><i class="fas fa-database"></i> MySQL</li>
+                                    <li><i class="fas fa-republican"></i> PostgresSQL</li>
+                                    <li><i class="fas fa-leaf"></i>   MongoDB</li>
+
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="mobile-apps box-info-serv box-radius">
+                        <h6>Mobile Applications</h6>
+                        <div class="info mobile-apps-info">
+                                <div class="service-info">
+                                    <p class="text-info-serv">We build amazing, beautiful and engaging native apps for the world’s biggest companies.
+                                        Our experience spans all mobile OSes and device profiles, including complex integrations
+                                        with core back-end systems.</p>
+                                </div>
+                                <ul class="list-services">
+                                    <li><i class="fab fa-apple"></i> Apple</li>
+                                    <li><i class="fab fa-android"></i>  Android</li>
+                                    <li><i class="fab fa-swift"></i>   Swift</li>
+                                </ul>
+                        </div>
+                    </div>  
+                    <div class="content-management box-info-serv box-radius">
+                        <h6 >Content Management Systems</h6>            
+                        <div class="info mobile-apps-info">
+                                <div class="service-info">
+                                    <p class="text-info-serv">From custom implementations to systems integration and ongoing support, we have the
+                                            capability and expertise to deliver a scalable and powerful content ecosystem for our
+                                            clients.</p>
+                                </div>
+                                <ul class="list-services">
+                                    <li><i class="far fa-sticky-note"></i> Contentful</li>
+                                    <li><i class="fab fa-wordpress"></i> Wordpress</li>
+                                </ul>
+                        </div>
+                    </div>  
+                    
+               
+             </div>
+          
+          
+
+       
+    </section>
+
+    <section class="work-detail-box">
+        <div > <h1>Work detail</h1></div>
+            <div class="work-detail">
+                <div class="work-one">
+                        <div class="service-button button-service-two button-work">
+                                <button class="form-btn-two new-color-button "> See more </button>
+                        </div>
+                </div>
+                <div class="work-two">
+                        <div class="service-button button-service-two button-work">
+                            <button class="form-btn-two new-color-button"> See more </button>
+                        </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <section class="contact-form">
+         <div class="container-img"></div>
+         <div class="form-container">
+             <form>
+                    <h1> Contact us </h1>
+                    <div class="form-box validate-input" >
+                        <label class="labelinput" for="name">Full name</label>
+                        <input id="name" class="input100" type="text" name="name" placeholder="Enter your name...">
+                        
+                    </div>
+                    <div class="form-box validate-input" >
+                        <label class="labelinput" for="email">Email Address</label>
+                        <input id="email" class="input100" type="text" name="email" placeholder="Enter your email...">
+                        
+                    </div>
+                    <div class="form-box">
+                            <div class="labelinput">Check our budget</div>
+                            <div>
+                                <select class="select-option" name="service">
+                                    <option>Please choose One</option>
+                                    <option>Personal Assistance</option>
+                                    <option>Low Budget Access</option>
+                                </select>
+                                <div class="dropDownSelect2"></div>
+                            </div>
+                            
+                    </div>
+                    <div class="form-box">
+                            <div class="labelinput">Check our Services</div>
+                            <div>
+                                <select class="select-option" name="service">
+                                    <option>Please choose One</option>
+                                    <option>Web & Front-end Applications</option>
+                                    <option>APIs & System Integrations</option>
+                                    <option>Databases</option>
+                                    <option>Mobile Applications</option>
+                                    <option>Content Management Systems</option>
+                                </select>
+                                <div class="dropDownSelect2"></div>
+                            </div>
+                            
+                    </div>
+                    <div class="form-box validate-input" data-validate = "Message is required">
+                            <label class="labelinput" for="message">Message</label>
+                            <textarea id="message" class="input100" name="message" placeholder="Type your message here..."></textarea>
+                            
+                    </div>
+                    <div class="container-form-btn">
+                         <button class="form-btn"> Send </button>
+                    </div>
+
+                 </form>
+            </div>
+        </section>
+
+    </section>
+    
+    <footer>
+        <section class="contact-info" id="contact">
+            <div class="contact-info-two">
+                <img src="images/logo.svg" alt="logo-footer">
+                <div class="footer-box"> 
+                    <div class="services-footer">
+                            <p>Our Services</p>
+                    
+                        <ul class="footer-info">
+                            <li>Web & Front-end Applications</li>
+                            <li>APIs & System Integrations</li>
+                            <li>Cloud Infrastructure</li>
+                            <li>Databases</li>
+                            <li>Mobile Applications</li>
+                            <li>Content Management Systems</li>
+                        </ul>
+                    </div>
+                    <div class="info-email">
+                        <span>contact@kayne.uk</span>
+                        <div class="line footer-line"></div>
+                        <div class="email-input">
+                            <input id="emailtwo" class="input10_email" type="text" placeholder="Enter your email...">
+                            <div class="container-form-btn">
+                                    <button class="form-btn"> Send </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="app/nav.js"></script>
+    <script src="app/app.js"></script>
+    
+</body>
+</html>
